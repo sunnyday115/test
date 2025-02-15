@@ -1,5 +1,4 @@
 pandas
-io
 requests
 openai
 os
