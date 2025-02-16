@@ -36,7 +36,7 @@ df = pd.read_csv(io.StringIO(response.content.decode('utf-8')))
 df["タイムスタンプ"] = pd.to_datetime(df["タイムスタンプ"])
 
 # APIキーの取得
-openai.api_key = st.secrets("OPENAI_API_KEY")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 with st.sidebar.header("分析対象期間"):
     st.write("分析対象期間を選択してください")
